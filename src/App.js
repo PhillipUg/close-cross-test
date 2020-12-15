@@ -1,9 +1,12 @@
-import './App.css';
+import './assets/styles/App.css';
+import Navbar from './components/Navbar';
+import Explore from './components/pages/explore/Explore';
 
 function App() {
   return (
     <div className="App">
-      <h1>Welcome</h1>
+      <Navbar />
+      <Explore />
     </div>
   );
 }
