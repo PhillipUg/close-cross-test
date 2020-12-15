@@ -1,0 +1,26 @@
+.explore {
+  display: flex;
+  flex: 1;
+  /* border: 3px solid maroon; */
+}
+
+.sidebar {
+  background-color: var(--bg-secondary-color);
+  /* border: 2px solid blue; */
+  width: 260px;
+}
+
+.main {
+  background-color: var(--bg-primary-color);
+  /* border: 2px solid red; */
+  flex: 5;
+}
+
+.graph {
+  background-image: url('../images/graph.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 90%;
+  height: 60px;
+}
