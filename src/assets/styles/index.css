@@ -1,8 +1,10 @@
 :root {
   --bg-primary-color: #272A2D;
   --bg-secondary-color: #181B1C;
+  --bg-other-color:#1E2122;
   --tag-color:#1C9DE8;
   --primary-green: #9AC802;
+  --primary-red: #FA4F4F;
   --font-grey:  #666E79;
 }
 
@@ -37,6 +39,7 @@
   font-style: normal;
   height: 100vh;
   width: 100vw;
+  z-index: -30;
 }
 
 #root {
