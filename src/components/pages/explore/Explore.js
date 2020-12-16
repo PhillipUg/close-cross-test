@@ -80,7 +80,7 @@ function Explore() {
             <div>
               <span className="strip-headings">Sort by: </span>
               <select name="category" id="category" className="filter-select">
-                <option value="trending" selected>Trending</option>
+                <option value="trending" defaultValue>Trending</option>
               </select>
             </div>
           </div>
