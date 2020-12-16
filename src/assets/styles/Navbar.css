@@ -1,14 +1,63 @@
 .navbar {
   display: flex;
   height: 64px;
-  /* border: 1px solid red; */
   background: var(--bg-primary-color);
   border-bottom: 2px solid var(--primary-green);
+  justify-content: space-between;
 }
 
 .navbar > div {
-  /* border: 1px solid green; */
   flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.navbar > div:first-child >*{
+  margin-left: 5%;
+}
+
+.navbar > div:nth-child(2)>*{
+  margin: 5px;
+}
+
+.navbar > div:last-child {
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.navbar > div:last-child > * {
+  margin-right: 20px;
+}
+
+.double-btn {
+  font-family: "Roboto-Medium";
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  cursor: pointer;
+}
+
+.double-btn > a {
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  display: inline-block;
+  flex: 1;
+  padding: 4px 13px;
+}
+
+.double-btn > a:first-child {
+  color:#111112;
+  background:#fff;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.double-btn > a:last-child {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.473);
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 .user {
@@ -35,3 +84,4 @@
   top: -3px;
   border-radius: 50%;
 }
+

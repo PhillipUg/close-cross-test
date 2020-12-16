@@ -9,11 +9,12 @@ import { IconContext } from 'react-icons'
 
 function Navbar() {
   return (
-    <IconContext.Provider value={{ color: '#AAAAAA', size: 20 }}>
+    <IconContext.Provider value={{
+      color: 'rgba(255, 255, 255, 0.473)', size: 24 }}>
       <div className="navbar">
         <div>
           <img src={logo} alt="logo" />
-          <div>
+          <div className="double-btn">
             <a href="#!">Training Mode</a>
             <a href="#!">Live Mode</a>
           </div>
