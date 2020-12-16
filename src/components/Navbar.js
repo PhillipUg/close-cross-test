@@ -10,7 +10,7 @@ import { IconContext } from 'react-icons'
 function Navbar() {
   return (
     <IconContext.Provider value={{
-      color: 'rgba(255, 255, 255, 0.473)', size: 24 }}>
+      color: 'var(--font-grey)', size: 24 }}>
       <div className="navbar">
         <div>
           <img src={logo} alt="logo" />
