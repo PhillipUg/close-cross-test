@@ -3,7 +3,8 @@
   min-width: 854px;
   height: 88px;
   font-family: 'Roboto-Medium';
-  margin: 20px auto;
+  margin: 0 auto;
+  margin-bottom: 20px;
   background: var(--bg-primary-color);
   border: 1px solid transparent;
   border-radius: 8px;
@@ -11,6 +12,7 @@
   display: flex;
   justify-content: space-evenly;
   padding: 10px 30px;
+  cursor: pointer;
 }
 
 .data-strip::after {
@@ -22,6 +24,7 @@
   z-index: -1;
   border-radius: 8px;
 }
+
 .data-strip p {
   margin: 2px;
 }
@@ -91,6 +94,7 @@
 }
 
 .strip-headings {
+  font-family: "Roboto-Medium";
   font-size: 12px;
   line-height: 16px;
   color: var(--font-grey);
