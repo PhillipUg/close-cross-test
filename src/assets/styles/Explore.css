@@ -1,26 +1,40 @@
 .explore {
   display: flex;
+  overflow: hidden;
   flex: 1;
+  z-index: 10;
 }
 
 .sidebar {
   background-color: var(--bg-secondary-color);
   font-family: 'Roboto-Medium';
   width: 260px;
+  height: 100%;
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .sidebar > div {
   border-bottom: 1px solid #272A2D;
   margin-top: 20px;
+  flex: 1;
 }
 
 .sidebar > div > * {
-  margin-bottom: 20px;
+  margin-bottom:5%;
 }
 
 .sidebar > div:last-child{
   border-bottom: none;
+}
+
+.sidebar > div:first-child{
+  flex: 0.5;
+}
+
+.sidebar > div:nth-child(2){
+  flex: 0.7;
 }
 
 .sidebar p {
@@ -28,8 +42,10 @@
 }
 
 .main {
-  background-color: var(--bg-primary-color);
+  background-color: var(--bg-other-color);
   flex: 5;
+  z-index: -5;
+  overflow-y: auto;
 }
 
 .graph {
@@ -105,6 +121,7 @@
   color: var(--font-grey);
   font-size: 12px;
   line-height: 16px;
+  cursor: pointer;
 }
 
 .tile-nav > li {

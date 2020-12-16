@@ -5,6 +5,8 @@ import { IoIosPulse } from 'react-icons/io'
 import { AiOutlineWallet } from 'react-icons/ai'
 import { Button } from '../../Button'
 import TileHeader from './TileHeader'
+import DataStrip from './DataStrip'
+import { stripOne, stripTwo } from './Data'
 
 function Explore() {
   return (
@@ -12,6 +14,7 @@ function Explore() {
       <div className="sidebar">
         <div>
           <TileHeader icon={<IoIosPulse />} title={"OPEN TRADES"} />
+          
           <div className="tile-details">
             <div>
               <p className="tile-headings">Trades in progress</p>
@@ -51,19 +54,31 @@ function Explore() {
             <p className="tile-headings">Trading</p>
             <div className="tile-details--last">
               <p className="tile-numbers">$ 34, 752.00</p>
-              <Button children={"TOP UP"} buttonStyle={"btn--outline"} />
+              <Button children={"TOP UP"} buttonStyle={"btn--outline"} buttonColor={'green--outline'} />
             </div>
           </div>
           <div>
             <p className="tile-headings">Holding</p>
             <div className="tile-details--last">
               <p className="tile-numbers">$ 4, 102.00</p>
-              <Button children={"BUY DAI"} buttonColor={"white"} />
+              <Button children={"BUY DAI"} buttonColor={"white"} buttonColor={'green'}/>
             </div>
           </div>
         </div>
       </div>
-      <div className="main"></div>
+      <div className="main">
+        <DataStrip {...stripOne}/>
+        <DataStrip {...stripTwo} />
+        <DataStrip {...stripTwo} />
+        <DataStrip {...stripTwo} />
+        <DataStrip {...stripTwo} />
+        <DataStrip {...stripTwo} />
+        <DataStrip {...stripTwo} />
+        <DataStrip {...stripTwo} />
+        <DataStrip {...stripTwo} />
+        <DataStrip {...stripTwo} />
+        <DataStrip {...stripTwo} />
+      </div>
     </div>
   )
 }
