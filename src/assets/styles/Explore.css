@@ -137,3 +137,68 @@
   background: var(--primary-green);
   color: #111112;
 }
+
+.main-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto-Medium";
+  font-size: 12px;
+  line-height: 16px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.main-filter > div:last-child {
+  display: flex;
+  align-items: center;
+}
+
+.main-filter > div:last-child > *:first-child {
+  display: flex;
+  margin-right: 40px;
+}
+
+.filter-units > span {
+  padding: 4px 13px;
+  cursor: pointer;
+}
+
+.filter-units > span:first-child {
+  border: 1px solid var(--primary-green);
+  color: var(--primary-green);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.filter-units > span:last-child {
+  border: 1px solid var(--primary-green);
+  background: var(--primary-green);
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.filter-select {
+  outline: none;
+  border-color: var(--font-grey);
+  background: transparent;
+  font-family: "Roboto-Medium";
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+  border-radius: 4px;
+  width: 132px;
+  height: 24px;
+  padding: 0 12px;
+  cursor: pointer;
+}
+
+.filter-select option {
+  background: var(--primary-green);
+  color: black;
+}
+
+.main-filter .strip-headings {
+  margin-right: 10px;
+}

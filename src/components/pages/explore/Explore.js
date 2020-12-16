@@ -14,7 +14,7 @@ function Explore() {
       <div className="sidebar">
         <div>
           <TileHeader icon={<IoIosPulse />} title={"OPEN TRADES"} />
-          
+
           <div className="tile-details">
             <div>
               <p className="tile-headings">Trades in progress</p>
@@ -61,19 +61,34 @@ function Explore() {
             <p className="tile-headings">Holding</p>
             <div className="tile-details--last">
               <p className="tile-numbers">$ 4, 102.00</p>
-              <Button children={"BUY DAI"} buttonColor={"white"} buttonColor={'green'}/>
+              <Button children={"BUY DAI"} buttonColor={"white"} buttonColor={'green'} />
             </div>
           </div>
         </div>
       </div>
       <div className="main">
-        <DataStrip {...stripOne}/>
-        <DataStrip {...stripTwo} />
-        <DataStrip {...stripTwo} />
-        <DataStrip {...stripTwo} />
-        <DataStrip {...stripTwo} />
-        <DataStrip {...stripTwo} />
-        <DataStrip {...stripTwo} />
+        <div className="main-filter">
+          <div>
+            <span className="strip-headings">Selected assets, types and period: </span>
+            <Button children={"FILTER"} buttonStyle={"btn--outline"} buttonColor={'green--outline'} />
+          </div>
+          <div>
+            <div>
+              <span className="strip-headings">Units: </span>
+              <div className="filter-units"><span>%</span><span>$</span></div>
+            </div>
+            <div>
+              <span className="strip-headings">Sort by: </span>
+              <select name="category" id="category" className="filter-select">
+                <option value="trending" selected>Trending</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <DataStrip {...stripOne} />
+        <DataStrip {...stripOne} />
+        <DataStrip {...stripOne} />
+        <DataStrip {...stripOne} />
         <DataStrip {...stripTwo} />
         <DataStrip {...stripTwo} />
         <DataStrip {...stripTwo} />
